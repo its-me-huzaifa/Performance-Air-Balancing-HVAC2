@@ -210,6 +210,10 @@ p {
   align-items: center;
 }
 
+.header>.container {
+  justify-content: unset;
+}
+
 .logo {
   padding: 12px 0;
 }
@@ -233,6 +237,10 @@ p {
 .logo-icon {
   font-size: 1.6rem;
   color: var(--accent);
+}
+
+nav {
+  margin-left: auto;
 }
 
 .nav-menu {
@@ -605,10 +613,12 @@ p {
 
 .service-card-icon {
   position: absolute;
-  bottom: -25px;
+  /* bottom: -25px; */
+  top: 45%;
   right: 20px;
   width: 55px;
   height: 55px;
+
   background: var(--accent);
   border-radius: 50%;
   display: flex;
@@ -617,11 +627,13 @@ p {
   color: var(--white);
   font-size: 1.3rem;
   box-shadow: var(--shadow);
-  z-index: 2;
+  z-index: 15;
 }
 
 .service-card-body {
   padding: 30px 24px 24px;
+  position: relative;
+  z-index: 1;
 }
 
 .service-card-body h3 {
@@ -1689,6 +1701,12 @@ p {
   .contact-info-cards {
     grid-template-columns: 1fr;
   }
+
+  .top-bar-right {
+    margin: auto;
+    gap: 30px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -1805,6 +1823,13 @@ p {
   .form-row {
     grid-template-columns: 1fr;
   }
+
+  .top-bar-right {
+    margin: auto;
+    gap: 30px;
+  }
+
+
 }
 
 @media (max-width: 480px) {
@@ -1820,4 +1845,11 @@ p {
     padding: 12px 24px;
     text-align: center;
   }
+
+  .top-bar-right {
+    margin: auto;
+    gap: 30px;
+  }
+
+
 }
